@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>PUT YOUR NAME HERE</title>
+		<title>Bodhi Hungerford</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -24,7 +24,7 @@
 						</div>
 						<div class="content">
 							<div class="inner">
-								<h1>YOUR NAME HERE</h1>
+								<h1>Bodhi Hungerford</h1>
 								<p>Welcome to my portfolio!</p>
 							</div>
 						</div>
@@ -46,7 +46,7 @@
 							<article id="intro">
 								<h2 class="major">Intro</h2>
 								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>INTRO ABOUT WHAT YOU HAVE DONE IN DATA ANALYTICS. Check out my <a href="#work">work</a>.</p>
+								<p>I have used Excel, SQL, Tableu, and Python to explore various Data in interesting and applicable ways. Check out my <a href="#work">work</a>.</p>
 							
 							</article>
 
@@ -54,8 +54,8 @@
 							<article id="work">
 								<h2 class="major">Work</h2>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>DESCRIBE PROJECT<br><a href="putlinkhere">PROJECT NAME 1</a></p>
-								<p>DESCRIBE PROJECT<br><a href="putlinkhere">PROJECT NAME 2</a></p>
+								<p>Here we have a basic 'HR Compenation Tool'. This was my first 'on my own' exploration of Excel. The project was to create a functioning Compensation tool for the HR department that could easily used by someone with little to no excel knowledge. It was able to project what a sale would look like using profit and items sold as the shifting metrics.<br><a href="https://drive.google.com/drive/folders/1Q5Mzr_0w4iWwkj8JqxLouBz1VWJ0oY4z?usp=sharing">HR compensation tool 1</a></p>
+								<p>Here we have my first Capstone. My first Capstone was a full exploration of Raw Data from a phony car company that was asking to increase its Revenue in the coming year. I had to set up a plan then execute using the data. Since the data was raw and to form vatrious tables and categorie to further understad this information and formulate an idea, which was then executed into a powerpoint to be presented to the ties for decision making,<br><a href="https://drive.google.com/drive/folders/1GmzPAiE9ClmzNP0951WSphJmugSc4OQb?usp=sharing">Lariat profitability plan 2</a></p>
 								<p>DESCRIBE PROJECT<br><a href="putlinkhere">PROJECT NAME 3</a></p>
 							</article>
 
@@ -72,9 +72,9 @@
 								
 								<ul class="icons">
 									
-									<li><a href="LINKEDIN URL HERE" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="GITHUB URL HERE" class="icon fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="TABLEAU URL HERE" class="icon fa-plus"><span class="label">Tableau</span></a></li>
+									<li><a href="https://www.linkedin.com/in/tyler-hungerford-46b1b81b0/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/buddhahungerford" class="icon fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://public.tableau.com/profile/bodhi6379#!/" class="icon fa-plus"><span class="label">Tableau</span></a></li>
 								</ul>
 							</article>
 
