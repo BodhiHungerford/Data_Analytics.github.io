@@ -1,0 +1,37 @@
+# This code is designed to sort files on a Windows computer. I utilized the shutil module to facilitate the file operations. Here's a breakdown of how it works:
+
+# 1. Created variables to set up the necessary parameters.
+# 2. Used a loop to create the required folders.
+# 3. Implemented an IF, ELIF, ELSE statement to sort the files into these folders based on their tags.
+# Additionally, this function can be adjusted to automatically sort files at regular intervals by incorporating a timer for internal execution.
+Automatic File Sorter in File Explorer
+
+import os, shutil
+path = "C:/Users/12153/OneDrive/Documents/Python Project/"
+file_names = os.listdir(path)
+folder_names = ['xlsx files', 'jpeg files', 'jpg files', 'docx files']
+
+for loop in range(0,4):
+    if not os.path.exists(path + folder_names[loop]):
+        #print(path + folder_names[loop])
+        os.makedirs(path + folder_names[loop])
+
+for file in file_names:
+    if ".xlsx" in file and not os.path.exists(path + "xlsx files/" + file):
+        shutil.move(path + file, path + "xlsx files/" + file)
+    elif ".jpeg" in file and not os.path.exists(path + "jpeg files/" + file):
+        shutil.move(path + file, path + "jpeg files/" + file)
+    elif ".jpg" in file and not os.path.exists(path + "jpg files/" + file):
+        shutil.move(path + file, path + "jpg files/" + file)
+    elif ".docx" in file and not os.path.exists(path + "docx files/" + file):
+        shutil.move(path + file, path + "docx files/" + file)
+        
+for file in file_names:
+    if ".xlsx" in file and not os.path.exists(path + "xlsx files/" + file):
+        shutil.move(path + file, path + "xlsx files/" + file)
+    elif ".jpeg" in file and not os.path.exists(path + "jpeg files/" + file):
+        shutil.move(path + file, path + "jpeg files/" + file)
+    elif ".jpg" in file and not os.path.exists(path + "jpg files/" + file):
+        shutil.move(path + file, path + "jpg files/" + file)
+    elif ".docx" in file and not os.path.exists(path + "docx files/" + file):
+        shutil.move(path + file, path + "docx files/" + file)
