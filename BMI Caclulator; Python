@@ -1,0 +1,77 @@
+BMI Calculator
+https://www.calculatorsoup.com/calculators/health/bmi-calculator.php
+
+# Below is a BMI Calculator I developed using Jupyter Notebook. When you run the code, you will be prompted to 
+# enter your name, weight, and height details. The code will then calculate your BMI and indicate where you fall 
+# on the BMI scale. Here's how I built it:
+
+# 1. Created input prompts for name, height and weight.
+# 2. Defined the formula to calculate BMI.
+# 3. Used IF, ELIF, and ELSE statements to categorize the results into different BMI ranges.
+
+
+name = input("Enter your name: ")
+
+weight = float(input("Enter your weight in pounds: "))
+
+height = float(input("Enter your height in inches: "))
+
+BMI = (weight * 703)/(height * height)
+
+print(BMI)
+
+if BMI>0:
+    if(BMI < 16.0):
+        print(name + ", You are Severly Underweight. Seek medical help.")
+    elif(BMI < 18.5):
+        print(name + ", You are Underweight.")
+    elif(BMI < 25):
+        print(name + ", You are Normal.")
+    elif(BMI < 30):
+        print(name + ", You are Overweight.")
+    elif(BMI < 35):
+        print(name + ", You are Moderately Obese. Hit the gym.")
+    elif(BMI < 40):
+        print(name + ", You are Severely Obese. Less pizza, more pushups.")
+    else:
+        print(name + ", You are Morbidly Obese. Seek medical help.")
+else:
+    print("Enter valid input")
+30.892667016002203
+bodhi, You are Moderately Obese. Hit the gym.
+ 
+ 
+ 
+# BMI = weight (lb) ÷ height2 (inches) * 703
+print(weight)
+227.3
+type(height)
+float
+< 16.0	Severely Underweight
+16.0 - 18.4	Underweight
+18.5 - 24.9	Normal
+25.0 - 29.9	Overweight
+30.0 - 34.9	Moderately Obese
+35.0 - 39.9	Severely Obese
+> 40.0	Morbidly Obese
+if BMI>0:
+    if(BMI < 16.0):
+        print(name + ", You are Severly Underweight. Seek medical help.")
+    elif(BMI < 18.5):
+        print(name + ", You are Underweight.")
+    elif(BMI < 25):
+        print(name + ", You are Normal.")
+    elif(BMI < 30):
+        print(name + ", You are Overweight.")
+    elif(BMI < 35):
+        print(name + ", You are Moderately Obese. Hit the gym.")
+    elif(BMI < 40):
+        print(name + ", You are Severely Obese. Less pizza, more pushups.")
+    else:
+        print(name + ", You are Morbidly Obese. Seek medical help.")
+else:
+    print("Enter valid input")
+bodhi, You are Moderately Obese. Hit the gym.
+        
+
+
