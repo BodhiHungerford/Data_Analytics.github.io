@@ -41,7 +41,7 @@ else:
 bodhi, You are Moderately Obese. Hit the gym.
  
  
- 
+# CODE BELOW THIS POINT IS MERELY REFERENCE CODE. CODE ABOVE IS MEANT TO RUN BMI CALCULATOR
 # BMI = weight (lb) ÷ height2 (inches) * 703
 print(weight)
 227.3
