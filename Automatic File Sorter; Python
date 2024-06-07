@@ -26,12 +26,3 @@ for file in file_names:
     elif ".docx" in file and not os.path.exists(path + "docx files/" + file):
         shutil.move(path + file, path + "docx files/" + file)
         
-for file in file_names:
-    if ".xlsx" in file and not os.path.exists(path + "xlsx files/" + file):
-        shutil.move(path + file, path + "xlsx files/" + file)
-    elif ".jpeg" in file and not os.path.exists(path + "jpeg files/" + file):
-        shutil.move(path + file, path + "jpeg files/" + file)
-    elif ".jpg" in file and not os.path.exists(path + "jpg files/" + file):
-        shutil.move(path + file, path + "jpg files/" + file)
-    elif ".docx" in file and not os.path.exists(path + "docx files/" + file):
-        shutil.move(path + file, path + "docx files/" + file)
