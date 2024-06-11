@@ -1,0 +1,134 @@
+# # Exploratory Data Analysis in Pandas
+
+# In this project, I employed Exploratory Data Analysis (EDA) to gain insights into World Population data. I began with some basic queries to comprehend 
+# and verify the integrity of the dataset. Subsequently, I performed queries to analyze the data by continent. I then created line charts to visualize 
+# population growth over time for each continent and followed this with a box plot to identify countries that are outliers compared to the average population.
+
+# In[48]:
+
+
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+
+# In[7]:
+
+
+df = pd.read_csv(r"C:\Users\12153\OneDrive\Documents\Data Analytics\Alex The Analyst\Pandas\world_population EDA .csv")
+df
+
+
+# In[5]:
+
+
+pd.set_option('display.max.rows', 235)
+pd.set_option('display.max.columns', 40)
+
+
+# In[9]:
+
+
+pd.set_option('display.float_format', lambda x: '%.1f' % x)
+
+
+# In[8]:
+
+
+df.info()
+
+
+# In[10]:
+
+
+df.describe()
+
+
+# In[11]:
+
+
+df.isnull().sum()
+
+
+# In[12]:
+
+
+df.nunique()
+
+
+# In[24]:
+
+
+df.sort_values(by = "World Population Percentage", ascending = False).head(10)
+
+
+# In[13]:
+
+
+df.corr(numeric_only = True)
+
+
+# In[79]:
+
+
+sns.heatmap(df.corr(numeric_only = True), annot = True)
+
+plt.rcParams['figure.figsize'] = (10,7)
+
+plt.show()
+
+
+# In[83]:
+
+
+df[df['Continent'].str.contains('Oceania')]
+
+
+# In[97]:
+
+
+df2 = df.groupby('Continent')[[ '1970 Population',
+       '1980 Population', '1990 Population', '2000 Population',
+       '2010 Population', '2015 Population', '2020 Population',
+       '2022 Population']].mean(numeric_only = True).sort_values(by = "2022 Population", ascending = False)
+df2
+
+#df2 = df.groupby('Continent')[df.columns[5:13]].mean(numeric_only = True).sort_values(by = "2022 Population", ascending = False)
+#df2
+
+
+# In[91]:
+
+
+df.columns
+
+
+# In[98]:
+
+
+df3 = df2.transpose()
+
+
+# In[104]:
+
+
+df3.plot(figsize = (17,7))
+
+
+# In[108]:
+
+
+df.boxplot(figsize = (20, 9))
+
+
+# In[ ]:
+
+
+
+
+
+# In[114]:
+
+
+df.select_dtypes(include='float')
+
