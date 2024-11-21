@@ -1,0 +1,99 @@
+This Data has come from the Centers for Medicare & Medicaid Services. 
+
+The name of the dataset is : Payroll Based Journal Daily Nurse Staffing - Q1 of 2024. 
+
+Link - https://data.cms.gov/quality-of-care/payroll-based-journal-daily-nurse-staffing/data/q1-2024
+
+I'll post the link to the dataset description, called Payroll Based Journal Methodology. 
+
+Link - https://data.cms.gov/resources/payroll-based-journal-methodology-0
+
+This dataset is summarized as, "daily data on nursing home staffing levels based on data submitted by nursing homes to CMS through the Payroll Based Journal 
+(PBJ) system and daily resident census information based on Minimum Data Set (MDS) records."
+
+The reasoning for this dataset is described as, "Long-term care (LTC) facilities must electronically submit to CMS through the PBJ system complete and accurate direct care staffing information, 
+including information for agency and contract staff, based on payroll and other verifiable and auditable data in a uniform format according to 
+specifications established by CMS. Facilities are required to submit the number of hours that each staff member (including agency and contract staff) is 
+paid to deliver services for each day worked."
+
+There are some limitations to the dataset. They are 
+"Total nurse staffing = 0 hours per resident per day2; or
+Total nurse staffing > 12 hours per resident per day; or
+Nurse aide staffing > 5.25 hours per resident per day.
+Total nurse staffing on weekends = 0 hours per resident per day3
+Total nurse staffing on weekends >12 hours per resident per day3
+Total nurse aide staffing on weekends > 5.25 hours per resident per day3"
+
+"Administrator Exclusion Criteria
+
+Administrator staffing data is excluded4 from the PBJ PUFs if the nursing home submitted PBJ data suggesting an erroneously high number of administrators. 
+Specifically, if a nursing home reports administrator hours (job code 1) for five or more individuals (based on employee IDs) on 4 or more days during the 
+quarter, the administrator staffing hours will be excluded and flagged as invalid."
+
+Additionally there is a warning on the limitations of the data, "Note that the exclusions for aberrant nurse staffing levels are applied to facilities’ data 
+aggregated across all days (or all weekend days for exclusions 4, 5 and 6) in the entire quarter, not for individual days. As a result, some extremely high 
+and low daily values exist in the data, and in particular, none of the inclusion or exclusion criteria require that facilities reported RN or LPN hours. 
+Analysts may wish to apply additional edits to the data and should be cautious in the interpretation of extreme values.   It should also be noted that 
+facilities are instructed to report only paid hours; yet, some staff, particularly salaried workers, may work additional hours that are unpaid and 
+unreported."
+
+For more detailed information on the dataset feel free to copy and paste the link above for access to the full description of the dataset.
+
+
+
+My original exploration was focused on determining KPI's for further exploration. After identifying the hours collected as a key asset I determined 
+to break down the hours of each location and needing a compartive value I decided to compare the individual location data to the data as a whole.
+
+Note: Due to the size of the data, I broke it down into two datasets. One was states from A-L and the second was states from M-Z.
+
+# Here you can see the scope of the locational data. Above is the count of unique values in each column
+
+states = A-L
+
+CITY                 2060
+STATE                  18
+COUNTY_NAME           674
+
+states = M-Z
+
+CITY                 3493
+STATE                  33
+COUNTY_NAME          1213
+
+# Below is average staff per day in the top 10 most staffed cities through Q1
+
+# states = A-L
+
+CHICAGO         10499
+LOS ANGELES      6679
+JACKSONVILLE     4200
+MIAMI            3675
+INDIANAPOLIS     3418
+LOUISVILLE       3082
+ATLANTA          2515
+WASHINGTON       2456
+LONG BEACH       2306
+ORLANDO          2257
+
+# states = M-Z
+
+BROOKLYN        9986
+BRONX           9743
+PHILADELPHIA    6257
+CINCINNATI      5528
+HOUSTON         5223
+SAN ANTONIO     4834
+NEW YORK        4436
+BALTIMORE       4302
+ROCHESTER       3800
+SAINT LOUIS     3259
+
+
+
+
+
+
+
+
+
+
